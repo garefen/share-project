@@ -1,0 +1,38 @@
+@import "../../scss/colors";
+
+$block: card;
+
+.#{$block} {
+  border: 1px solid $dark-green;
+  width: fit-content;
+  min-width: 200px;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text {
+    padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__description {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+  }
+
+  &__author {
+    margin-top: 20px;
+  }
+}
+
+:export {
+  block: $block;
+}

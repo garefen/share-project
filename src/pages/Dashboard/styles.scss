@@ -1,0 +1,21 @@
+$block: dashboard;
+
+.#{$block} {
+  margin-top: 70px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    margin: 20px 10px;
+  }
+}
+
+:export {
+  block: $block;
+}
