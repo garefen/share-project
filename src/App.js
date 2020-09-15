@@ -1,13 +1,14 @@
-import React from 'react';
-import './App.scss';
-
-import Text from './components/Text';
+import React from "react";
+import "./App.scss";
+import Dashboard from "./pages/Dashboard/index.jsx";
+import Navbar from "./components/Navbar/index.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <Text label={'label'} />
-    </div>
+    <>
+      <Navbar />
+      <Dashboard />
+    </>
   );
 }
 
